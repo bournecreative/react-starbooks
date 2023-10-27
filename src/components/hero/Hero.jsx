@@ -46,6 +46,7 @@ const useStyles = createUseStyles({
         },
         content: {
             paddingTop: '100px',
+            width: '100%',
             '@media (min-width: 768px)': {
                 paddingTop: '120px',
             },
@@ -62,11 +63,11 @@ const useStyles = createUseStyles({
                 fontWeight: '100',
                 lineHeight: 1.4,
                 margin: '0 0 24px 0',
-                width: '470px',
+                width: '465px',
                
             },
             '@media (min-width: 1200px)': {
-                width: '645px',
+                width: '643px',
             }
         },
         heading: {
