@@ -1,5 +1,5 @@
-// import './App.css'
 import { HomePage } from './pages/index'
+
 function App() {
   return (
     <HomePage />
