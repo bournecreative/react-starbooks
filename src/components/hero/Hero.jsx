@@ -1,5 +1,6 @@
 import { createUseStyles } from 'react-jss'
 import { Button } from '../button/Button'
+import { ScrollIndicator } from '../scrollIndicator/ScrollIndicator';
 
 const useStyles = createUseStyles({
         hero: {
@@ -82,6 +83,15 @@ const useStyles = createUseStyles({
                 fontSize: '18px',
                
             }
+        },
+        heroScrollMarker: {
+            display: 'none',
+            '@media (min-width: 1200px)': {
+                bottom: '40px',
+                display: 'block',
+                position: 'absolute',
+                right: '40px',
+            }
         }
 
     })
@@ -100,6 +110,9 @@ export const Hero = ({ bgImage, heading, tagline, body }) => {
                 <h1 className={styles.heading}>{heading}</h1>
                 <p className={styles.body}>{body}</p>
                 <Button handleClick={handleClick} label="See What's News" />
+            </div>
+            <div className={styles.heroScrollMarker}>
+                <ScrollIndicator/>
             </div>
         </div>
     )
