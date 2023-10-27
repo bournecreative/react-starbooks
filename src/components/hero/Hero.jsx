@@ -37,6 +37,7 @@ const useStyles = createUseStyles({
                 borderRadius: '40px',
                 '&:before': {
                     borderRadius: '40px',
+                    opacity: '0.7',
                 }
             },
             '@media (min-width: 768px)': {
